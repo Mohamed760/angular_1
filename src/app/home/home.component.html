@@ -1,0 +1,27 @@
+<!-- Data-interplotion  -->
+<h1 class="text-center fs-2">Your Name is : {{userName}}</h1> 
+<h1 class="text-center fs-2">Your Name is : {{userAge}}</h1> 
+
+
+
+<!-- property Bindind || attruibte Binding -->
+
+ <a  [href]="googleLink">google</a><br>
+<img [src]="img" class="w-25 pt-5" alt="">
+<br>
+
+
+
+<!-- Event Binding -->
+ <!-- <button (click)="test()" class="btn btn-danger">Click me</button> -->
+ <input (keyup.ArrowLeft)="test($event)">
+
+
+
+ <!-- Class Binding -->
+<h1 [class]="textCenter" >Lorem ipsum dolor sit amet.</h1>
+<h1 [class]="isAdmin ? 'text-center text-primary bg-warning ' : 'text-center text-danger bg-primary' ">Lorem, ipsum dolor.</h1>
+
+<!-- Two Way Data Binding -->
+<input [(ngModel)]="data" class="border border-dark border-2" type="text">
+<h1 class="text-center">{{data}}</h1>
